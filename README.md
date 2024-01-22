@@ -25,8 +25,9 @@ If you want to check out CMC API Documentation can go to through this link.
 ## Installation
 
 You need do install some packages from venv and i provide <b>requirement.txt</b> for install packages what needed
-
+and dont forget to make VENV in python or Virtual Enviroment
 ```bash
+  python -m venv venv
   pip install -r requirement.txt
 ```
     
