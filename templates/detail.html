@@ -1,0 +1,21 @@
+{% extends 'components/body.html' %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row mt-5 text-center">
+        <h1>Detail</h1>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6 text-center">
+            <h5>Name : {{data.name}}</h5>
+            <h5>id : {{data.id}}</h5>
+            <h5>Symbol : {{data.symbol}}</h5>
+        </div>
+        <div class="col-md-6 text-center">
+            <h5>Total Supply : {{data.total_supply}}</h5>
+            <h5>Last Updated : {{data.last_updated}}</h5>
+        </div>
+    </div>
+</div>
+{% endblock content %}

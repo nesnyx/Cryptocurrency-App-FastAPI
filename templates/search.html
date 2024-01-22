@@ -1,0 +1,15 @@
+{% extends 'components/body.html' %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row mt-5 text-center">
+        {%for i in data%}
+            <div class="col-md-3">
+                <p>{{i.name}}</p>
+                <button class="mb-5" type="button"><a href="/listing/{{i.id}}">Detail</a></button>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

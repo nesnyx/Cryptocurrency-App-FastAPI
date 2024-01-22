@@ -1,0 +1,21 @@
+{% extends 'components/body.html' %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row mt-5 text-center">
+        <h2>Welcome to My App</h2>
+        <p>This app use CoinMarketCap API</p>
+    </div>
+    <div class="row mt-5 text-center">
+        <div class="col-md-6 mt-5">
+            <h5>CoinMarketCap API</h5>
+            <img src="{{ url_for('static', path='img/cmc.png') }}" width="200" alt="">
+        </div>
+        <div class="col-md-6 mt-5">
+            <h5>FastAPI</h5>
+            <img src="{{ url_for('static', path='img/fastapi.png') }}" width="200" alt="">
+        </div>
+    </div>
+</div>
+{% endblock content %}
